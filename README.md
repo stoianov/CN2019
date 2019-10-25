@@ -4,7 +4,9 @@ This repository provides teaching material for the course "Computational Neurosc
 
 Lecturer: ivilin.stoianov@unipd.it
 
-Stay tuned for material.
+
+1) Implementation of a MLP
+
 
 ## Prerequisites
 
