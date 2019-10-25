@@ -1,6 +1,7 @@
 % Creates a new 2-layer multilayer perceptron.
 % Network size is given in the input parameter sz
 % sz=[n-input units, n-hidden units, n-output units]
+% N  a structure with the layer weights.
 
 function N=mlp_init(sz)
 
