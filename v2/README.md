@@ -1,17 +1,3 @@
-# CN2019
+# MLP (v2) wih momentum term
 
-This repository provides teaching material for the course "Computational Neuroscience" 2019/2020 of the COGNITIVE NEUROSCIENCE AND CLINICAL NEUROPSYCHOLOGY M.Sc. degree, University of Padova, Italy.
-
-Lecturer: ivilin.stoianov@unipd.it
-
-
-1) Implementation of a MLP
-
-
-## Prerequisites
-
-MATLAB (or Octave)
-
-## License
-
-This repository is licensed under the MIT License.
+an extension of the main code with momentum term to avoid local minima and speedup training 
