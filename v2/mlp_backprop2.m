@@ -13,9 +13,9 @@ function [N,e]=mlp_backprop2(N,X,T)
  dH = (dY*N.ow').*H.*(1-H);     % Deltas for the hidden layer 
  
  N.dow= mc * N.dow + (1-mc)*lc * (H'*dY);
- N.dob= mc * N.dob + (1-mc)*lc * mean(dY);
+ N.dob= mc * N.dob + (1-mc)*lc * sum(dY);
  N.dhw= mc * N.dhw + (1-mc)*lc * (X'*dH);
- N.dhb= mc * N.dhb + (1-mc)*lc * mean(dH);
+ N.dhb= mc * N.dhb + (1-mc)*lc * sum(dH);
  
  N.ow = N.ow + N.dow;           % ow: [nh,no]
  N.ob = N.ob + N.dob;           % ob  [1 ,no]

@@ -10,12 +10,12 @@ function [N,e]=mlp_backprop(N,X,T)
  dY = E.*Y.*(1-Y);              % Deltas at the output layer
  dW = (H'*dY);                  % Weight change 
  N.ow = N.ow + lc * dW;         % ow: [nh,no]
- N.ob = N.ob + lc * mean(dY);   % ob  [1 ,no]
+ N.ob = N.ob + lc * sum(dY);   % ob  [1 ,no]
  
  dH = (dY*N.ow').*H.*(1-H);     % Deltas at the hidden layer  
  dW = (X'*dH);                  % Weigh changes 
  N.hw = N.hw + lc * dW;         % hw  [in,nh]
- N.hb = N.hb + lc * mean(dH);   % hb  [1 ,nh]
+ N.hb = N.hb + lc * sum(dH);   % hb  [1 ,nh]
  
  e=mean(abs(E(:)));             % Average error over all output units and all data
 
