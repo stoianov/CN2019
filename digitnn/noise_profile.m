@@ -2,7 +2,7 @@
 % NN: the cell array with networks. LEG: concise description of each network 
 % E.g.: noise_profile({NN,NN0},{'trained','baseline'})
 
-function noise_profile(NN,LEG)   % plot the effect of rotation on response accuracy of several networks 
+function noise_profile(NN,LEG)  % plot the effect of noise on response accuracy of several networks 
 nnet=numel(NN);                 % NN is a cell array; each element is one network.
 [X,~,N,~]=digitdata(500);       % Load a subset with 500 items per digit 
 
@@ -23,7 +23,7 @@ for lev=1:nlev
 end
 
 figure(5);  
- plot(sig,AC);                  % Show the response as a function of rotation
+ plot(sig,AC);                  % Show the response as a function of noise level
  title('Effect of noise level');
  xlabel('Noise level (st.dev.)');
  ylabel('Accuracy');
