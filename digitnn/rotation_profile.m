@@ -20,10 +20,12 @@ for i=1:na
 end
 
 %% PLOT
-figure(5);  
+h_fg=figure(12); clf reset;     % Set figure properies (position, size, background, .. ) ready to save as image	
+set(h_fg,'Position',[500,5000,400,400],'Renderer','zbuffer','Color',[1 1 1],'PaperPositionMode', 'auto');
  plot(range,EA);                % Show the response as a function of rotation
  title('Effect of rotation');
  ylabel('Response error');
  xlabel('Rotation (degrees)');
  ylim([0 max(EA)*1.1]);
+print(h_fg,'-dpng','-painters','-r100','rotation.png'); % Save the response profile as an image "response.png"
 end

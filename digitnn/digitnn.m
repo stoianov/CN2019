@@ -1,6 +1,6 @@
 %% PARAMS
 nhid=50;                    % number of hidden units
-nses=20;                    % number of training sessions
+nses=30;                    % number of training sessions
 nepochs=1000;               % number of iterations per session
 
 %% DATA
