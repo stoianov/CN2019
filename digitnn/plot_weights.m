@@ -2,7 +2,7 @@
 function plot_weights(NN)
 
 h_fg=figure(2);clf reset;
-set(h_fg,'Position',[100,1000,800,500],'Renderer','zbuffer','Color',[1 1 1],'PaperPositionMode', 'auto');
+set(h_fg,'Position',[100,1000,1500,800],'Renderer','zbuffer','Color',[1 1 1],'PaperPositionMode', 'auto');
 
 clim=2;                         % Limits of color scale, to show more clearly the response patterns
 cthr=1;                         % Plot as Zero any (absolute) weight-value bellow this threshold
