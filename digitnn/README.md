@@ -42,6 +42,6 @@ This repository contains a pattern-recognition application of the back prop lear
   
 - **Analysis** of the simulation
 
- `noise_profile.m
-  ​rotation_profile.m
-  plot_weights.m`
+ `noise_profile.m`
+ `rotation_profile.m`
+ `plot_weights.m`
