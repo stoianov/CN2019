@@ -1,6 +1,6 @@
-# Recognition of digit images
+# Visual perception of handwritten digits
 
-This repository contains a pattern-recognition application of the back prop learning algorithm. 
+This repository contains a pattern-recognition application of the back prop learning algorithm and analysis of the network performance. 
 
 *Content*:
 
@@ -8,7 +8,7 @@ This repository contains a pattern-recognition application of the back prop lear
 
   *Digits20x20.mat*
 
-  ​	Dataset containing in total 5000 images of digits 0, 1, .. 9 in matlab format (500 images per class). The images are linearized as vectors. Each row in D.IMG contains one digit image.
+  ​	Dataset containing in total 5000 images of digits 0, 1, .. 9 in matlab format (500 images per digit). The images are linearized as vectors. Each row in D.IMG contains the image of one digit.
 
   *digitdata_demo.m*
 
@@ -30,19 +30,21 @@ This repository contains a pattern-recognition application of the back prop lear
 
   
 
-- Learning digit recognition with a MLP and online analysis
+- Learning handwritten digit recognition with the MLP network and analysis
 
   ***digitnn***.m
 
-  ​	specified params and trains a MLP network to recognize the images, using the back prop algorithm.
+  ​	specifies params and trains a MLP network to recognize the images, using the back prop algorithm.
   
   ​    Learning is divided in sessions (e.g., n=10 sessions). 
   
-  ​    Each session draws training data; trains the network on it, and analyzes the response on a new set of data that in turn becomes new training set.  
+  ​    Each session draws a subset of training data; trains the network on it, and analyzes the response on a new subset that in turn becomes training data for the next training session.  
   
   *digitnn_analysis.m*
   
-  ​	function that analyzes the response (overall error, confusion matrix ecc)	
+  ​	A function that analyzes the overall response (overall error, confusion matrix ecc)
+  
+  
 
 
 

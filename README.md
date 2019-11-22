@@ -4,14 +4,13 @@ This repository provides teaching material for the course "Computational Neurosc
 
 Lecturer: ivilin.stoianov@unipd.it
 
+1) Implementation of a basic MLP (structuring, activation, backprop training)
 
-1) Implementation of a MLP
+2) Implementation of a perceptual simulation task (visual perception of handwritten digits)
 
 
 ## Prerequisites
-
-MATLAB (or Octave)
+Knowledge of MATLAB and basic math
 
 ## License
-
 This repository is licensed under the MIT License.
