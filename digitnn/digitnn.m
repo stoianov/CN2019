@@ -16,7 +16,6 @@ ER=[];                      % Storage for error
 for i=1:nses
   fprintf('\nIteration %d ..\n',i);
   %% TRAINING
-  nepoch=1000;              % Number of training epochs
   NN=mlp_train(NN,X,Y,nepochs); % Train the network on this data
 
   %% TEST on random subset .. and training set for next sesion
