@@ -1,7 +1,7 @@
 function N=dbn_train(N,X,trainepochs)
 
 % Learning params  
-N.par.mom=0.08;
+N.par.mom=0.8;
 N.par.eps=0.03;
 N.par.dec=0.0003;
 N.par.batchsize=20;
