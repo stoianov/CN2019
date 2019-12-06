@@ -2,8 +2,7 @@
 % X: Input data (the features of each pattern)
 % T: Target data
 function [N,e]=mlp_backprop(N,X,T)
-
- lc=0.01;                      % Learning coefficient
+ lc=N.lc;                       % Learning coefficient
  [Y, H]=mlp_activate(N,X);      % Activate the MLP on data 
  E=T-Y;                         % Errors for each data patterns
  

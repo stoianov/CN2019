@@ -22,7 +22,7 @@ for layer=2:N.nlayers,
       end
       Xpat=X(Idata(Itr),:);         % Get the training patterns
       
-      noise=randn(size(Xpat))*0.02;  % Generate gaussian noise
+      noise=randn(size(Xpat))*0.02; % Generate gaussian noise (stdev=0.02)
       Xpat=max(0,min(1,Xpat+noise));% Add the noise to the input, and rectify [0-1]
       
       N=rbn_train(N,layer,Xpat);    % Train the layer on this pattern    

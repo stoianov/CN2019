@@ -29,7 +29,7 @@ for i=1:n,
  IMG=reshape(w,imagesize); % Reshape the weights as an image
  imagesc(IMG);      % Plot the image
  axis image; axis off; 
- title(sprintf('Unit %d',i)); 
+ %title(sprintf('Unit %d',i)); 
 end
 colormap gray;
 
